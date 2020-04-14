@@ -1,12 +1,12 @@
 var player1 = prompt("Player One: Enter Your Name , you will be Blue");
-  if (player1 == null) {
-      player1 = 'Player One'
+  if (player1 == '') {
+      player1 = 'Player One';
   }
 var player1Color = 'rgb(86, 151, 255)';
 
 var player2 = prompt("Player Two: Enter Your Name, you will be Red");
-  if (player2 == null) {
-    player2 == Player Two
+  if (player2 == '') {
+    player2 = 'Player Two';
   }
 var player2Color = 'rgb(237, 45, 73)';
 
@@ -107,7 +107,7 @@ var currentPlayer = 1;
 var currentName = player1;
 var currentColor = player1Color
 
-$('h3').text(player1+' is is your turn. Pick a column to move');
+$('h3').text(player1+' it is your turn. Pick a column to move');
 
 $('.board button').on('click', function () {
   var col = $(this).closest('td').index()
